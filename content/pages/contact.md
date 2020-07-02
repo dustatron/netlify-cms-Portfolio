@@ -1,13 +1,12 @@
 ---
 title: Contact us
-subtitle: ''
-featuredImage: '/images/uploads/mark-chang-74-3.jpg'
+featuredImage: /images/uploads/mark-chang-74-3.jpg
+subtitle: Love Email!
 address: 404 James St, Burleigh Heads QLD 4220
 phone: 0987 123 456
 email: example@example.com
 ---
-
-# Example contact form
+# Give me an EMAIL
 
 This form is setup to use Netlify's form handling:
 
