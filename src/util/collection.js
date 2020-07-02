@@ -14,13 +14,13 @@ export const getCollectionTerms = (
 
   if (!collection.length) return []
   let terms = collection
-    .filter(collectionItem => collectionItem[taxonomyName])
+    .filter((collectionItem) => collectionItem[taxonomyName])
     .reduce((acc, collectionItem) => {
       const termField = collectionItem[taxonomyName]
       const collectionItemTerms =
         typeof termField === 'string'
-          ? termField.split(',').map(term => _kebabCase(term.trim()))
-          : termField.map(term => _kebabCase(_values(term)[0]))
+          ? termField.split(',').map((term) => _kebabCase(term.trim()))
+          : termField.map((term) => _kebabCase(_values(term)[0]))
       return _uniq([...acc, ...collectionItemTerms])
     }, [])
     .sort()
@@ -33,8 +33,8 @@ export const documentHasTerm = (doc, taxonomyName, term) => {
   if (!termField) return false
   const terms =
     typeof termField === 'string'
-      ? termField.split(',').map(term => _kebabCase(term))
-      : termField.map(term => _kebabCase(_values(term)[0]))
+      ? termField.split(',').map((term) => _kebabCase(term))
+      : termField.map((term) => _kebabCase(_values(term)[0]))
 
   return _includes(terms, _kebabCase(term))
 }
