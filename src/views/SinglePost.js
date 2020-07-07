@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { ChevronLeft } from 'react-feather'
 
 import Content from '../components/Content'
@@ -20,13 +20,13 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
       )}
 
       <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/blog/">
+        {/* <Link className="SinglePost--BackButton" to="/blog/">
           <ChevronLeft /> BACK
-        </Link>
+        </Link> */}
         <div className="SinglePost--Content relative">
           <div className="SinglePost--Meta">
             {!!categories.length &&
-              categories.map(obj => (
+              categories.map((obj) => (
                 <span key={obj.category} className="SinglePost--Meta--Category">
                   {obj.category}
                 </span>
@@ -46,20 +46,20 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
 
           <div className="SinglePost--Pagination">
             {prevPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link prev"
-                to={prevPostURL}
-              >
-                Previous Post
-              </Link>
+              // <Link
+              //   className="SinglePost--Pagination--Link prev"
+              //   to={prevPostURL}
+              // >
+              //   Previous Post
+              // </Link>
             )}
             {nextPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link next"
-                to={nextPostURL}
-              >
-                Next Post
-              </Link>
+              // <Link
+              //   className="SinglePost--Pagination--Link next"
+              //   to={nextPostURL}
+              // >
+              //   Next Post
+              // </Link>
             )}
           </div>
         </div>
