@@ -20,7 +20,6 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
       )}
 
       <div className="container skinny">
-        
         {/* <Link className="SinglePost--BackButton" to="/blog/">
           <ChevronLeft /> BACK
         </Link> */}
@@ -42,27 +41,27 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
           {title && <h1 className="SinglePost--Title">{title}</h1>}
 
           <div className="SinglePost--InnerContent">
-            <h1>turkey</h1>
+            <h1>turkey test</h1>
             <Content source={body} />
           </div>
 
           <div className="SinglePost--Pagination">
-            {prevPostURL && (
-              // <Link
-              //   className="SinglePost--Pagination--Link prev"
-              //   to={prevPostURL}
-              // >
-              //   Previous Post
-              // </Link>
-            )}
-            {nextPostURL && (
-              // <Link
-              //   className="SinglePost--Pagination--Link next"
-              //   to={nextPostURL}
-              // >
-              //   Next Post
-              // </Link>
-            )}
+            {/* {prevPostURL && (
+              <Link
+                className="SinglePost--Pagination--Link prev"
+                to={prevPostURL}
+              >
+                Previous Post
+              </Link>
+            )} */}
+            {/* {nextPostURL && (
+              <Link
+                className="SinglePost--Pagination--Link next"
+                to={nextPostURL}
+              >
+                Next Post
+              </Link>
+            )} */}
           </div>
         </div>
       </div>
