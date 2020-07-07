@@ -20,7 +20,7 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
       )}
 
       <div className="container skinny">
-        hello
+        
         {/* <Link className="SinglePost--BackButton" to="/blog/">
           <ChevronLeft /> BACK
         </Link> */}
@@ -42,6 +42,7 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
           {title && <h1 className="SinglePost--Title">{title}</h1>}
 
           <div className="SinglePost--InnerContent">
+            <h1>Hello</h1>
             <Content source={body} />
           </div>
 
