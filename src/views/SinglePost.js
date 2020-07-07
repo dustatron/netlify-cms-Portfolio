@@ -42,7 +42,7 @@ export default ({ fields, nextPostURL, prevPostURL }) => {
           {title && <h1 className="SinglePost--Title">{title}</h1>}
 
           <div className="SinglePost--InnerContent">
-            <h1>Hello</h1>
+            <h1>turkey</h1>
             <Content source={body} />
           </div>
 
